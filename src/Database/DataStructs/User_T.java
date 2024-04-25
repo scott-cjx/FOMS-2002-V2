@@ -84,6 +84,15 @@ public class User_T implements IDatabaseItem_T {
         this.staffType = staffType;
     }
 
+    public User_T(String username, String password, boolean isStaff, Branch_T branchT, StaffType staffType) {
+        this.userUUID = UUID.randomUUID();
+        this.username = username;
+        this.password = password;
+        this.isStaff = isStaff;
+        this.branchT = branchT;
+        this.staffType = staffType;
+    }
+
     @Override
     public boolean addMeToDB() {
         return SharedResources.getUserDatabaseHelper().addToDatabase(this);
