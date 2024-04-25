@@ -2,6 +2,7 @@ package Views.StaffViews.BranchManagerViews;
 
 import Database.DataStructs.Branch_T;
 import Database.DataStructs.MenuItem_T;
+import Database.DataStructs.MenuItem_T.CATEGORIES;
 import Main.SharedResources;
 import Views.UIQueryView;
 
@@ -12,6 +13,7 @@ public class BranchManagerAddMenuItemView extends UIQueryView {
     private String itemName;
     private String itemDesc;
     private float price;
+    private CATEGORIES category;
 
     private Branch_T branchT;
 
@@ -31,6 +33,28 @@ public class BranchManagerAddMenuItemView extends UIQueryView {
 
         System.out.print("Item Price: ");
         price = sc.nextFloat();
+
+        System.out.print(   "1. DRINK\n" +
+                                "2. NA\n" +
+                                "3. SET_MEAL\n" +
+                                "4. SIDE \n> " );
+                switch (sc.nextInt()) {
+                case 1:
+                    category = (MenuItem_T.CATEGORIES.DRINK);
+                    break;
+                case 2:
+                    category = (MenuItem_T.CATEGORIES.NA);
+                    break;
+                case 3:
+                    category = (MenuItem_T.CATEGORIES.SET_MEAL);
+                    break;
+                case 4:
+                    category = (MenuItem_T.CATEGORIES.SIDE);
+                    break;
+                default:
+                    System.out.println("Not valid category");
+                    break;
+                }   
     }
 
     @Override
@@ -41,7 +65,7 @@ public class BranchManagerAddMenuItemView extends UIQueryView {
 //        init menuItem
         this.menuItemT = new MenuItem_T(
                 this.price, MenuItem_T.AVAILABILITY.AVAILABLE,
-                this.itemDesc, this.itemName, MenuItem_T.CATEGORIES.NA
+                this.itemDesc, this.itemName, this.category
         );
 
         if (this.branchT == null) {
@@ -50,11 +74,11 @@ public class BranchManagerAddMenuItemView extends UIQueryView {
         }
 
         if (!this.branchT.addMenuItem(menuItemT)) {
-            System.out.println("menuItem already exists in branch");
+            System.out.println("Item already exists in branch");
             return ViewStatus.FAIL_AND_GO_BACK;
         }
 
-        System.out.println("menuItem added to branch");
+        System.out.println("Item added to branch");
         return ViewStatus.FAIL_AND_GO_BACK;
     }
 }
