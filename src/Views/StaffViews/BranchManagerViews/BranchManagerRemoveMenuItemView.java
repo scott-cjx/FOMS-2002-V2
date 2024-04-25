@@ -5,6 +5,7 @@ import Database.DataStructs.MenuItem_T;
 import Database.DataStructs.User_T;
 import Main.SharedResources;
 import Views.UIQueryView;
+import Views.MenuViews.MenuDisplayView;
 
 import java.util.Scanner;
 
@@ -17,12 +18,15 @@ public class BranchManagerRemoveMenuItemView extends UIQueryView {
     public BranchManagerRemoveMenuItemView() {
         this.myViewName = this.getClass().getCanonicalName();
     }
-
     @Override
     public void query() {
+
+        MenuDisplayView menuDisplayView = new MenuDisplayView(true);
+        menuDisplayView.show();
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("> ");
+        System.out.print("Removing item > ");
         itemIdx = sc.nextInt();
     }
 

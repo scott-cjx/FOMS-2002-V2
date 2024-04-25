@@ -66,6 +66,12 @@ public class Main {
         user = new User_T(username, "admin", true, StaffType.ADMIN);
         user.addMeToDB();
 
+        for (int i = 0; i < 3; i++) {
+            username = "user" + i;
+            user = new User_T(username, "password", true, StaffType.NORMAL_STAFF);
+            user.addMeToDB();
+        }
+        
         Branch_T branch;
         MenuItem_T menuItem;
 
@@ -78,6 +84,11 @@ public class Main {
         branch.addMenuItem(menuItem);
         branch.addMeToDB();
 
+        
+        username = "CCPadmin";
+        user = new User_T(username, "password", true, branch, StaffType.BRANCH_MANAGER);
+        user.addMeToDB();
+
         branch = new Branch_T("Jurong Point");
         menuItem = new MenuItem_T(11.10f, MenuItem_T.AVAILABILITY.NOT_AVAILABLE, "Cold Tacos", "Cold Tacos", MenuItem_T.CATEGORIES.SET_MEAL);
         branch.addMenuItem(menuItem);
@@ -86,6 +97,10 @@ public class Main {
         menuItem = new MenuItem_T(11.90f, MenuItem_T.AVAILABILITY.AVAILABLE, "Curly Fries", "Curly Fries", MenuItem_T.CATEGORIES.SIDE);
         branch.addMenuItem(menuItem);
         branch.addMeToDB();
+
+        username = "JPadmin";
+        user = new User_T(username, "password", true, branch, StaffType.BRANCH_MANAGER);
+        user.addMeToDB();
 
         PaymentMethod_T paymentMethod;
         paymentMethod = new PaymentMethod_T("Master", PaymentType.CREDIT_CARD);
@@ -103,16 +118,6 @@ public class Main {
         paymentMethod = new PaymentMethod_T("Paynow", PaymentType.QR);
         paymentMethodDBHelper.addToDatabase(paymentMethod);
 
-        for (int i = 0; i < 2; i++) {
-            username = "user" + i;
-            user = new User_T(username, "password", true, StaffType.NORMAL_STAFF);
-            user.addMeToDB();
-        }
-        for (int i = 2; i < 5; i++) {
-            username = "user" + i;
-            user = new User_T(username, "password", true, StaffType.BRANCH_MANAGER);
-            user.addMeToDB();
-        }
     }
 
     private static void open_databases() {
