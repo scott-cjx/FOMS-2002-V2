@@ -140,12 +140,12 @@ public class MenuItem_T implements IDatabaseItem_T {
     @Override
     public String toString() {
         return "MenuItem_T{" +
-                ", availability=" + availability.toString() +
+                "availability=" + availability.toString() +
                 ", price=" + price +
                 ", description='" + description + '\'' +
                 ", name='" + name + '\'' +
-//                ", category=" + category +
-                ", branchUUID=" + branchUUID +
+                ", category=" + category +
+//                ", branchUUID=" + branchUUID +
                 '}';
     }
 

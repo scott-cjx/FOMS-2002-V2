@@ -1,6 +1,6 @@
 package Backend;
 
-import Views.StaffViews.BranchManagerViews.BranchManagerEditMenuView;
+import Views.StaffViews.BranchManagerViews.BranchManagerMenuView;
 import Views.StaffViews.BranchManagerViews.BranchManagerDisplayStaffView;
 import Views.UIView;
 
@@ -24,7 +24,7 @@ public class BranchManagerStaff extends NormalStaff implements IBranchManager {
     public UIView[] getSubViews() {
         UIView[] mySubViews = new UIView[] {
                 new BranchManagerDisplayStaffView(),
-                new BranchManagerEditMenuView(),
+                new BranchManagerMenuView(),
         };
 
         int totalLength = mySubViews.length + super.getSubViews().length;
