@@ -6,6 +6,7 @@ import Database.DataStructs.User_T;
 import Main.SharedResources;
 import Views.UIQueryView;
 import Views.MenuViews.MenuDisplayView;
+import Database.DataStructs.Branch_T;
 
 import java.util.Scanner;
 
@@ -38,9 +39,10 @@ public class BranchManagerRemoveMenuItemView extends UIQueryView {
             return ViewStatus.FAIL_AND_GO_BACK;
         }
         this.menuItemT = (MenuItem_T) SharedResources.getMenuDBHelper().getFromDatabase(this.itemIdx-1);
+        this.branchT = SharedResources.getCurrentStaffBranchT();
 
         int idx = SharedResources.getMenuDBHelper().idxInDatabase_itemUUID(menuItemT, true);
-        SharedResources.getMenuDBHelper().removeFromDatabase(idx);
+        branchT.removeMenuItem(idx);
         System.out.println("item removed!");
         return ViewStatus.SUCCESS_AND_GO_BACK;
     }

@@ -73,6 +73,25 @@ public class Branch_T implements IDatabaseItem_T {
         return false;
     }
 
+    public boolean removeMenuItem(String menuItemName) {
+        MenuItem_T tempMenuItemT;
+        for (int i = 0; i < this.menuItems.size(); i++) {
+            tempMenuItemT = this.menuItems.get(i);
+            if (
+                    tempMenuItemT.getName().equals(menuItemName)
+            ) {
+                this.menuItems.remove(i);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean removeMenuItem(int idx) {
+            this.menuItems.remove(idx);
+                return true;
+    }
+
     public boolean addNormalStaff(User_T userObj) {
         User_T tempUser;
         for (int i = 0; i < this.normalStaffArr.size(); i++) {
