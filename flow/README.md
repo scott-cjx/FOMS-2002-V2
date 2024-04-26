@@ -10,7 +10,7 @@ This just shows the general gist of the program flow...
 
 View this from the Github repository if the charts are not generating for you.
 
-
+![img](../uml/View_Flow_Diagram.png)
 
 ``` mermaid
 flowchart TD

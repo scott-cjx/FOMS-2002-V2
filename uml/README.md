@@ -2,12 +2,13 @@
 
 This shows the structure of the code for the program.
 
-![img](./Overall%20UML.jpg)
+![img](./Overall%20UML.png)
+![img](./Main%20UML.png)
+![img](./Backend%20UML.png)
+![img](./Views%20UML.png)
+![img](./Database%20UML.png)
 
-![img](./Main%20UML.jpg)
+This shows flow of the program...
 
-![img](./Database%20UML.jpg)
+![img](./View_Flow_Diagram.png)
 
-![img](./Backend%20UML.jpg)
-
-![img](./Views%20UML.jpg)
