@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.AdminViews;
 
 import Backend.Branch;
@@ -12,6 +18,9 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+/**
+ * view for admin to move staff to another branch
+ */
 public class AdminMoveStaffView extends UIQueryView {
     private String username;
     private int userIdx;

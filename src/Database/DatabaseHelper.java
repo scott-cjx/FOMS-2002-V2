@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Database;
 
 import Database.DataStructs.IDatabaseItem_T;
@@ -5,6 +11,10 @@ import Database.DataStructs.IDatabaseItem_T;
 import java.io.*;
 import java.util.ArrayList;
 
+/**
+ * generic database helper for serializing and deserializing objects to/from
+ * a serialized file.
+ */
 public class DatabaseHelper {
     protected String databasePath = "";
 

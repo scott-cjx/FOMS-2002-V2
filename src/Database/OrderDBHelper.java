@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Database;
 
 import Backend.Branch;
@@ -6,6 +12,9 @@ import Database.DataStructs.IDatabaseItem_T;
 import Database.DataStructs.OrderStatus;
 import Database.DataStructs.Order_T;
 
+/**
+ * helper for order database
+ */
 public class OrderDBHelper extends DatabaseHelper {
     public OrderDBHelper(String databaseString) {
         super(databaseString);

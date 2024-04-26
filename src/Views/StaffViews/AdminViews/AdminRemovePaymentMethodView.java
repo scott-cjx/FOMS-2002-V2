@@ -1,3 +1,10 @@
+/**
+ @author Scott Cheng
+ @author Bryan Wong
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.AdminViews;
 
 
@@ -10,6 +17,9 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+/**
+ * view for admin to remove payment method
+ */
 public class AdminRemovePaymentMethodView extends UIQueryView {
     private PaymentMethod_T paymentMethod_T;
     private String paymentMethodName;

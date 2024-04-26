@@ -1,9 +1,18 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views;
 
 import Main.SharedResources;
 
 import java.util.Scanner;
 
+/**
+ * View controller to display and query user in form of menu
+ */
 public class UIMenuView extends UIView {
     protected String[] myViewOptions;
     protected boolean isBaseView = false;

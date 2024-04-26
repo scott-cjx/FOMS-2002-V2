@@ -1,9 +1,18 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Database.DataStructs;
 
 import Main.SharedResources;
 
 import java.util.UUID;
 
+/**
+ * database type for user
+ */
 public class User_T implements IDatabaseItem_T {
     private UUID userUUID;
     private String username;

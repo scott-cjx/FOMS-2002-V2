@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.BranchViews;
 
 import Database.BranchDBHelper;
@@ -8,6 +14,9 @@ import Views.UIView;
 
 import java.util.ArrayList;
 
+/**
+ * view to display all branches
+ */
 public class BranchDisplayAllView extends UIView {
     private final ArrayList<IDatabaseItem_T> branchArr;
     private final BranchDBHelper branchDBHelper;

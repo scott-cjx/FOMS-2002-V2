@@ -1,9 +1,19 @@
+/**
+ @author Scott Cheng
+ @author Bryan Wong
+ @version 1.0
+ @since 2024-04-22
+ */
+
 package Database.DataStructs;
 
 import Main.SharedResources;
 
 import java.util.UUID;
 
+/**
+ * database type for payment method
+ */
 public class PaymentMethod_T implements IDatabaseItem_T {
     private UUID paymentMethodId;
     private String paymentMethodName; //Master, Visa, Paylah, PayNow, Nets

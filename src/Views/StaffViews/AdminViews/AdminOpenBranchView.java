@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.AdminViews;
 
 import Database.DataStructs.Branch_T;
@@ -5,6 +11,9 @@ import Views.UIQueryView;
 
 import java.util.Scanner;
 
+/**
+ * view for admin to open a new branch
+ */
 public class AdminOpenBranchView extends UIQueryView {
     private String branchName;
     private Branch_T branchT;

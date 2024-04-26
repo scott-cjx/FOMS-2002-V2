@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.AdminViews;
 
 import Database.DataStructs.PaymentMethod_T;
@@ -6,6 +12,9 @@ import Views.UIQueryView;
 
 import java.util.Scanner;
 
+/**
+ * view for admin to add a payment method
+ */
 public class AdminAddPaymentMethodView extends UIQueryView {
     private PaymentMethod_T paymentMethod_T;
     private String paymentMethodName;

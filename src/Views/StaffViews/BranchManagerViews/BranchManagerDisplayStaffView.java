@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.BranchManagerViews;
 
 import Database.DataStructs.*;
@@ -5,6 +11,9 @@ import Views.UIView;
 import Main.SharedResources;
 import java.util.ArrayList;
 
+/**
+ * view for branch manager to display staff
+ */
 public class BranchManagerDisplayStaffView extends UIView {
     public BranchManagerDisplayStaffView() {
         this.myViewName = this.getClass().getCanonicalName();

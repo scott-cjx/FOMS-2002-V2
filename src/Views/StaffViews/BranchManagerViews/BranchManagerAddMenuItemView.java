@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.BranchManagerViews;
 
 import Database.DataStructs.Branch_T;
@@ -7,6 +13,9 @@ import Views.UIQueryView;
 
 import java.util.Scanner;
 
+/**
+ * view for branch manager to add manu item to branch
+ */
 public class BranchManagerAddMenuItemView extends UIQueryView {
     private MenuItem_T menuItemT;
     private String itemName;

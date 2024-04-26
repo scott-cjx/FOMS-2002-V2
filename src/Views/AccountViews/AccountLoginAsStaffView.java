@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.AccountViews;
 
 import Backend.Admin;
@@ -11,6 +17,10 @@ import Views.UIQueryView;
 
 import java.util.Scanner;
 
+
+/**
+ * view for staff to log in to account
+ */
 public class AccountLoginAsStaffView extends UIQueryView {
     private String username;
     private String password;

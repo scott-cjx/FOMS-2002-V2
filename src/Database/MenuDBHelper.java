@@ -1,8 +1,17 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Database;
 
 import Database.DataStructs.Branch_T;
 import Database.DataStructs.MenuItem_T;
 
+/**
+ * helper for menu database
+ */
 public class MenuDBHelper extends DatabaseHelper {
     public MenuDBHelper(String databaseString) {
         super(databaseString);

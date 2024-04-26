@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Main;
 
 import Backend.Branch;
@@ -8,6 +14,10 @@ import Database.DataStructs.Order_T;
 import Database.DataStructs.PaymentMethod_T;
 import Database.DataStructs.User_T;
 
+/**
+ * Static class to share resources for all objects in app.
+ * This is like a main.h file
+ */
 public class SharedResources {
     private static UserDBHelper userDatabaseHelper;
     private static OrderDBHelper orderDBHelper;

@@ -1,3 +1,10 @@
+/**
+ @author Scott Cheng
+ @author Jung Kit
+ @version 1.0
+ @since 2024-04-22
+ */
+
 package Views.StaffViews.BranchManagerViews;
 
 import Database.DataStructs.Branch_T;
@@ -8,6 +15,9 @@ import Views.UIQueryView;
 
 import java.util.Scanner;
 
+/**
+ * view for branch manager to edit the menu item
+ */
 public class BranchManagerEditMenuItemView extends UIQueryView {
 
     private MenuItem_T menuItemT;

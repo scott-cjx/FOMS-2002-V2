@@ -1,7 +1,17 @@
+/**
+ @author Scott Cheng
+ @author Bryan Wong
+ @version 1.0
+ @since 2024-04-22
+ */
+
 package Database;
 
 import Database.DataStructs.PaymentMethod_T;
 
+/**
+ * helper for payment methods database
+ */
 public class PaymentMethodDBHelper extends DatabaseHelper {
     public PaymentMethodDBHelper(String databaseString) {
         super(databaseString);

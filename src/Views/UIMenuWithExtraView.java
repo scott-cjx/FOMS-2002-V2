@@ -1,14 +1,36 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views;
 
+/**
+ * UIMenuView which supports extra views passed by an object (for dynamic views)
+ */
 public class UIMenuWithExtraView extends UIMenuView {
 
+    /**
+     * extra view options that this view controller will request from an object
+     */
     protected String[] myExtraViewOptions;
+
+    /**
+     * extra views that this view controller will request from an object
+     */
     protected UIView[] myExtraSubViews;
 
+    /**
+     * default constructor
+     */
     public UIMenuWithExtraView() {
         super();
     }
 
+    /**
+     * override show method to include the extra views
+     */
     @Override
     public void show() {
         int i = 0;
@@ -30,6 +52,11 @@ public class UIMenuWithExtraView extends UIMenuView {
         }
     }
 
+    /**
+     * override the hasNextView method to let UIMenuView controller know that
+     * there is more views than without the extra
+     * @return
+     */
     @Override
     public boolean hasNextView() {
 //            if view is unable to provide what user request, send error
@@ -39,6 +66,10 @@ public class UIMenuWithExtraView extends UIMenuView {
                 (this.user_request - 1) <= (this.subViews.length + this.myExtraSubViews.length - 1);
     }
 
+    /**
+     * returns the next view for the UIMenuView controller call
+     * @return
+     */
     @Override
     public UIView getNextView() {
         UIView subView;

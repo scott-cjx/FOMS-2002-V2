@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.MenuViews;
 
 import Backend.Branch;
@@ -5,6 +11,9 @@ import Database.DataStructs.Branch_T;
 import Main.SharedResources;
 import Views.UIView;
 
+/**
+ * view to display the menu of a branch
+ */
 public class MenuDisplayView extends UIView {
 
     private Branch branch;

@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.AdminViews;
 
 import Database.DataStructs.StaffType;
@@ -9,6 +15,9 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+/**
+ * view for admin to change a staff type
+ */
 public class AdminChangeStaffTypeView extends UIQueryView {
     private String username;
     private int userIdx;

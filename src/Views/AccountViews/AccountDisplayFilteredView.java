@@ -1,3 +1,11 @@
+/**
+ @author Scott Cheng
+ @author Bryan Wong
+ @author Iain Lim
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.AccountViews;
 
 import Main.SharedResources;
@@ -11,6 +19,9 @@ import Database.DataStructs.IDatabaseItem_T;
 import Database.DataStructs.StaffType;
 import Database.DataStructs.User_T;
 
+/**
+ * view to display the accounts filtered
+ */
 public class AccountDisplayFilteredView extends UIQueryView {
     private int filterBy;
     private int filterFor;

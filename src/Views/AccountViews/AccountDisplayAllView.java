@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.AccountViews;
 
 import Database.DataStructs.Branch_T;
@@ -9,6 +15,9 @@ import Views.UIView;
 
 import java.util.ArrayList;
 
+/**
+ * view to display all accounts
+ */
 public class AccountDisplayAllView extends UIView {
 
     private UserDBHelper userDBHelper;

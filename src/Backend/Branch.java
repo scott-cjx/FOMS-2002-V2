@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Backend;
 
 import Database.DataStructs.Branch_T;
@@ -6,15 +12,24 @@ import Main.SharedResources;
 
 import java.util.ArrayList;
 
+
+/**
+ * Branch Backend class of staff
+ */
 public class Branch {
+
     private Branch_T branchT;
-    private Staff[] myStaff;
-//    private ArrayList<MenuItem_T> branchMenu;
 
     public Branch(Branch_T branchT) {
         this.branchT = branchT;
     }
 
+    /**
+     * gives the menu of the branch
+     * @param branchT instance of branch
+     * @param show print from method
+     * @return arraylist of items from the branch
+     */
     public static ArrayList<MenuItem_T> printMenu(Branch_T branchT, boolean show) {
         if (branchT == null) {
             System.out.println("You have no branch, unable to print menu");
@@ -33,6 +48,11 @@ public class Branch {
         return filteredBranchMenu;
     }
 
+    /**
+     * gives the number of normal staff quota of the branch
+     * @param branchT instance of the branch
+     * @return max number of normal staff the branch can have for the number of branch managers
+     */
     public static int maxNormalStaff(Branch_T branchT) {
         int nBmSize = branchT.getBranchManagerArr().size();
         System.out.println(nBmSize);

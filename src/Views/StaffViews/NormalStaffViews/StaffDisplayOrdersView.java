@@ -1,3 +1,10 @@
+/**
+ @author Scott Cheng
+ @author Bryan Wong
+ @version 1.0
+ @since 2024-04-22
+ */
+
 package Views.StaffViews.NormalStaffViews;
 
 import Backend.Branch;
@@ -6,7 +13,9 @@ import Backend.Staff;
 import Main.SharedResources;
 import Views.UIView;
 
-// TODO Implement
+/**
+ * view to display all orders
+ */
 public class StaffDisplayOrdersView extends UIView {
     NormalStaff normalStaff;
     Branch branch;

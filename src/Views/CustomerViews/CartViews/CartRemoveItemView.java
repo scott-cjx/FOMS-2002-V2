@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.CustomerViews.CartViews;
 
 import Views.UIQueryView;
@@ -5,6 +11,9 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+/**
+ * view for cart to remove item
+ */
 public class CartRemoveItemView extends UIQueryView {
     private int user_request;
     public CartRemoveItemView() {

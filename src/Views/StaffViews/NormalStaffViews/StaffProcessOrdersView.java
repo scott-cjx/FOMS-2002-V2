@@ -1,3 +1,10 @@
+/**
+ @author Scott Cheng
+ @author Bryan Wong
+ @version 1.0
+ @since 2024-04-22
+ */
+
 package Views.StaffViews.NormalStaffViews;
 
 import Backend.Branch;
@@ -11,6 +18,9 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+/**
+ * View for staff to process order
+ */
 public class StaffProcessOrdersView extends UIQueryView {
     NormalStaff normalStaff;
     Branch branch;

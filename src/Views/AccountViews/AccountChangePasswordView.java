@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.AccountViews;
 
 import Database.DataStructs.StaffType;
@@ -7,6 +13,9 @@ import Views.UIQueryView;
 
 import java.util.Scanner;
 
+/**
+ * view for account to change password
+ */
 public class AccountChangePasswordView extends UIQueryView {
     private User_T currUser;
     private String newPassword;

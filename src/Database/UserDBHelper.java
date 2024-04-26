@@ -1,7 +1,16 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Database;
 
 import Database.DataStructs.User_T;
 
+/**
+ * helper for user database
+ */
 public class UserDBHelper extends DatabaseHelper {
     public UserDBHelper(String databaseString) {
         super(databaseString);

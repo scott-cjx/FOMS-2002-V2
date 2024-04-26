@@ -1,9 +1,18 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Database;
 
 import Database.DataStructs.Branch_T;
 import Database.DataStructs.MenuItem_T;
 import Database.DataStructs.User_T;
 
+/**
+ * helper for branch database
+ */
 public class BranchDBHelper extends DatabaseHelper {
     public BranchDBHelper(String databaseString) {
         super(databaseString);

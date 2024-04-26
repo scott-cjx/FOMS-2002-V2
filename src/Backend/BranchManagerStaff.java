@@ -1,10 +1,23 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
 package Backend;
 
 import Views.StaffViews.BranchManagerViews.BranchManagerAmendMenuView;
 import Views.StaffViews.BranchManagerViews.BranchManagerDisplayStaffView;
 import Views.UIView;
 
-public class BranchManagerStaff extends NormalStaff implements IBranchManager {
+/**
+ * Branch Manger
+ */
+public class BranchManagerStaff extends NormalStaff {
+
+    /**
+     * gives UIMenuExtraView its extra Views options
+     * @return getViewOptions
+     */
     @Override
     public String[] getViewOptions() {
         String[] myViewOptions = new String[] {
@@ -20,6 +33,10 @@ public class BranchManagerStaff extends NormalStaff implements IBranchManager {
         return ourViewOptions;
     }
 
+    /**
+     * gives UIMenuExtraView its extra Views
+     * @return getSubViews
+     */
     @Override
     public UIView[] getSubViews() {
         UIView[] mySubViews = new UIView[] {
@@ -33,25 +50,5 @@ public class BranchManagerStaff extends NormalStaff implements IBranchManager {
         System.arraycopy(mySubViews, 0, ourSubViews, super.getSubViews().length, mySubViews.length);
 
         return ourSubViews;
-    }
-
-    @Override
-    public void displayMyStaff() {
-
-    }
-
-    @Override
-    public boolean addToMenu() {
-        return false;
-    }
-
-    @Override
-    public boolean removeFromMenu() {
-        return false;
-    }
-
-    @Override
-    public boolean editFromMenu() {
-        return false;
     }
 }

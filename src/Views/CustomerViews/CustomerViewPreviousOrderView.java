@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.CustomerViews;
 
 import Database.DataStructs.OrderStatus;
@@ -9,6 +15,10 @@ import Views.UIQueryView;
 import java.util.Scanner;
 import java.util.UUID;
 
+
+/**
+ * view for a customer to see a previous view
+ */
 public class CustomerViewPreviousOrderView extends UIQueryView {
     private boolean toPickup;
     private String orderId;

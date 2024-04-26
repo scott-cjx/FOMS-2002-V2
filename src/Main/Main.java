@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Main;
 
 import Database.*;
@@ -7,6 +13,9 @@ import Database.DataStructs.MenuItem_T;
 import Views.MainViews.MainView;
 import Views.UIView;
 
+/**
+ * the main object of app. everything starts here.
+ */
 public class Main {
     public static UIView mainView;
     public static UserDBHelper userDatabaseHelper;

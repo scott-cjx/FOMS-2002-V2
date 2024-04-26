@@ -1,3 +1,10 @@
+/**
+ @author Scott Cheng
+ @author Jung Kit
+ @version 1.0
+ @since 2024-04-22
+ */
+
 package Views.StaffViews.BranchManagerViews;
 
 import Backend.Branch;
@@ -12,6 +19,9 @@ import Views.UIView;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * view for branch manager to remove menu item
+ */
 public class BranchManagerRemoveMenuItemView extends UIQueryView {
     private MenuItem_T menuItemT;
     private int itemIdx;

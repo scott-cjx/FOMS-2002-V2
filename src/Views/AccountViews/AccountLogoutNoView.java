@@ -1,8 +1,17 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.AccountViews;
 
 import Main.SharedResources;
 import Views.UIView;
 
+/**
+ * no view for account to log out
+ */
 public class AccountLogoutNoView extends UIView {
     public AccountLogoutNoView() {
         this.myViewName = this.getClass().getCanonicalName();

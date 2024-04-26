@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.CustomerViews.CartViews;
 
 import Database.DataStructs.Order_T;
@@ -7,6 +13,10 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+
+/**
+ * view to update the cart's items
+ */
 public class CartUpdateItemView extends UIQueryView {
     private int user_request;
     public CartUpdateItemView() {

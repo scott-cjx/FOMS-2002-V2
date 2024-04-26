@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.CustomerViews.CartViews;
 
 import Database.DataStructs.MenuItem_T;
@@ -8,6 +14,10 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+
+/**
+ * view for the cart to add item
+ */
 public class CartAddItemView extends UIQueryView {
     private int itemIdx;
     private int itemQn;

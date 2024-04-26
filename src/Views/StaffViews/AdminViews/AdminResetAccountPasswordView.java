@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.AdminViews;
 
 import Database.DataStructs.User_T;
@@ -8,6 +14,9 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+/**
+ * view for admin to reset account password
+ */
 public class AdminResetAccountPasswordView extends UIQueryView {
     private String username;
     private User_T userPartialT;

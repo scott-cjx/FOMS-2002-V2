@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.PaymentMethodViews;
 
 import Database.DataStructs.IDatabaseItem_T;
@@ -8,6 +14,9 @@ import Views.UIView;
 
 import java.util.ArrayList;
 
+/**
+ * view to display all payment methods
+ */
 public class PaymentMethodDisplayAllView extends UIView {
     private final ArrayList<IDatabaseItem_T> pmArr;
     private final PaymentMethodDBHelper paymentMethodDBHelper;

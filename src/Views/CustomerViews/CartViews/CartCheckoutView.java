@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.CustomerViews.CartViews;
 
 import Database.DataStructs.OrderStatus;
@@ -8,6 +14,9 @@ import Views.UIQueryView;
 
 import java.util.Scanner;
 
+/**
+ * view to checkout from the customer's cart
+ */
 public class CartCheckoutView extends UIQueryView {
     private int user_request;
     public CartCheckoutView() {

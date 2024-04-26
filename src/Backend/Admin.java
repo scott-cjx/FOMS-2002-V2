@@ -1,18 +1,26 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Backend;
 
-import Database.DataStructs.StaffType;
-import Database.DataStructs.User_T;
-import Main.SharedResources;
-import Views.AccountViews.AccountDisplayAllView;
-import Views.CrudView;
 import Views.StaffViews.AdminViews.AdminManageAccountsView;
 import Views.StaffViews.AdminViews.AdminManageBranchView;
 import Views.StaffViews.AdminViews.AdminManagePaymentMethodsView;
 import Views.StaffViews.AdminViews.AdminManageStaffView;
 import Views.UIView;
 
-public class Admin extends Staff implements IAdmin {
+/**
+ * Admin Backend class of Staff
+ */
+public class Admin extends Staff {
 
+    /**
+     * gives UIMenuExtraView its extra Views options
+     * @return getViewOptions
+     */
     @Override
     public String[] getViewOptions() {
         return new String[] {
@@ -23,6 +31,10 @@ public class Admin extends Staff implements IAdmin {
         };
     }
 
+    /**
+     * gives UIMenuExtraView its extra Views
+     * @return getSubViews
+     */
     @Override
     public UIView[] getSubViews() {
         return new UIView[] {
@@ -31,60 +43,5 @@ public class Admin extends Staff implements IAdmin {
                 new AdminManageBranchView(),
                 new AdminManagePaymentMethodsView(),
         };
-    }
-    @Override
-    public boolean addStaff() {
-        return false;
-    }
-
-    @Override
-    public boolean editStaff() {
-        return false;
-    }
-
-    @Override
-    public boolean removeStaff() {
-        return false;
-    }
-
-    @Override
-    public void displayAllStaff() {
-        SharedResources.getUserDatabaseHelper().printAllInDatabase(true);
-    }
-
-    @Override
-    public boolean promoteStaff(User_T userPartial, StaffType newStaffType) {
-        int idx;
-        idx = SharedResources.getUserDatabaseHelper().idxInDatabase_uuid(userPartial, true);
-        if (idx == -1) return false;
-
-        userPartial.setStaffType(newStaffType);
-        SharedResources.getUserDatabaseHelper().updateDataInDatabase(idx, userPartial);
-        return true;
-    }
-
-    @Override
-    public boolean transferStaff() {
-        return false;
-    }
-
-    @Override
-    public boolean addPaymentMethod() {
-        return false;
-    }
-
-    @Override
-    public boolean removePaymentMethod() {
-        return false;
-    }
-
-    @Override
-    public boolean addBranch() {
-        return false;
-    }
-
-    @Override
-    public boolean removeBranch() {
-        return false;
     }
 }

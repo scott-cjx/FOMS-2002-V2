@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.CustomerViews.CartViews;
 
 import Database.DataStructs.Order_T;
@@ -6,6 +12,9 @@ import Views.MenuViews.MenuDisplayView;
 import Views.UIMenuView;
 import Views.UIView;
 
+/**
+ * base view for the cart
+ */
 public class CartBaseView extends UIMenuView {
     public CartBaseView() {
        this.myViewName = this.getClass().getCanonicalName();

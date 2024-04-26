@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.CustomerViews;
 
 import Database.DataStructs.Branch_T;
@@ -7,6 +13,10 @@ import Views.UIMenuView;
 import Views.UIQueryView;
 import Views.UIView;
 
+
+/**
+ * base view for customer menu
+ */
 public class CustomerBaseView extends UIMenuView {
     private Branch_T currBranch;
     public CustomerBaseView() {

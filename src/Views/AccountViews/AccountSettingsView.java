@@ -1,8 +1,17 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.AccountViews;
 
 import Views.UIMenuView;
 import Views.UIView;
 
+/**
+ * base view for account settings
+ */
 public class AccountSettingsView extends UIMenuView {
     public AccountSettingsView() {
         this.myViewName = this.getClass().getCanonicalName();

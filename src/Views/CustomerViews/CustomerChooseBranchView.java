@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.CustomerViews;
 
 import Backend.Branch;
@@ -12,6 +18,10 @@ import Views.UIView;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+/**
+ * view that gets the branch the customer is at
+ */
 public class CustomerChooseBranchView extends UIQueryView {
     private final ArrayList<IDatabaseItem_T> branchArr;
     private final BranchDBHelper branchDBHelper;

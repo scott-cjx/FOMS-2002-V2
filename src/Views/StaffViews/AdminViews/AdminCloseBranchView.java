@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews.AdminViews;
 
 import Database.DataStructs.Branch_T;
@@ -9,6 +15,9 @@ import Views.UIView;
 
 import java.util.Scanner;
 
+/**
+ * view for admin to close a branch
+ */
 public class AdminCloseBranchView extends UIQueryView {
     private String branchName;
     private Branch_T branchPartialT;

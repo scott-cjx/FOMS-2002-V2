@@ -1,7 +1,14 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Backend;
 
-import Database.DataStructs.User_T;
 import Views.IBackendView;
-import Views.UIView;
 
+/**
+ * Abstract backend class of staff
+ */
 public abstract class Staff implements IBackendView { }

@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Views.StaffViews;
 
 import Backend.Staff;
@@ -11,6 +17,9 @@ import Views.UIMenuWithExtraView;
 import Views.UIQueryView;
 import Views.UIView;
 
+/**
+ * Base View for Staff
+ */
 public class StaffBaseView extends UIMenuWithExtraView {
     private User_T currUser;
     private Staff staffObj;

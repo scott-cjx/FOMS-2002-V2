@@ -1,3 +1,9 @@
+/**
+ @author Scott Cheng
+ @version 1.0
+ @since 2024-04-01
+ */
+
 package Backend;
 
 import Database.DataStructs.User_T;
@@ -5,9 +11,15 @@ import Views.StaffViews.NormalStaffViews.StaffDisplayOrdersView;
 import Views.StaffViews.NormalStaffViews.StaffProcessOrdersView;
 import Views.UIView;
 
-public class NormalStaff extends Staff implements INormalStaff {
-    protected User_T userObj;
+/**
+ * Normal Staff Backend Class of staff
+ */
+public class NormalStaff extends Staff {
 
+    /**
+     * gives UIMenuExtraView its extra Views options
+     * @return getViewOptions
+     */
     @Override
     public String[] getViewOptions() {
         return new String[] {
@@ -17,6 +29,10 @@ public class NormalStaff extends Staff implements INormalStaff {
         };
     }
 
+    /**
+     * gives UIMenuExtraView its extra Views
+     * @return getSubViews
+     */
     @Override
     public UIView[] getSubViews() {
         return new UIView[] {
@@ -24,15 +40,5 @@ public class NormalStaff extends Staff implements INormalStaff {
                 new StaffProcessOrdersView(),
                 new StaffDisplayOrdersView(false),
         };
-    }
-
-    @Override
-    public void displayOrders(boolean onlyNew) {
-
-    }
-
-    @Override
-    public void displayOrder() {
-
     }
 }
